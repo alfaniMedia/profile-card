@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Profile Card</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <div class="profile-card">
+        <div class="header overlay">
+            <!--<img src="webdesign.png" alt="" class="logo1">-->
+            <img src="img/logo.png" alt="" class="logo">
+        </div>
+        <div class="profile-pic">
+            <img src="img/team.jpg" alt="">
+        </div>
+        <div class="content">
+            <h2>Ahuofe Mango</h2>
+            <h3>Front-End Web Developer & Entrepreneur</h3>
+        </div>
+
+        <div class="info-section">
+            <button class="fold">Business Name</button>
+            <div class="reveal"><p>UNIQUE MEDIA</p></div>
+
+            <button class="fold">Industry</button>
+            <div class="reveal"><p>WEB DEVELOPMENT</p></div>
+
+            <button class="fold">Brief Description of Business</button>
+            <div class="reveal"><p><span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Incidunt a tenetur sit ratione eaque, iste amet quaerat perferendis
+                tempore iure itaque vero, corporis architecto ullam animi aspernatur aut voluptates nisi modi hic possimus. Error tempora
+                minima rerum, magni sint dolorem nobis molestiae pariatur dolor sit at assumenda repellendus numquam cupiditate dicta
+                id sed laboriosam facere officia.</span></p></div>
+
+            <button class="fold">Membership</button>
+            <div class="reveal"><p>CO-FOUNDER</p></div>
+
+            <button class="fold">Contact</button>
+            <div class="reveal">
+                <p>ahuofemango@gmail.com <br>
+                +233 555 006 123</p>
+            </div>
+        </div>
+
+ 
+        <div class="social">
+            <a href="#"><img src="social/facebook.png"></a>
+            <a href="#"><img src="social/linkedin.png"></a>
+            <a href="#"><img src="social/twitter.png"></a>
+            <a href="#"><img src="social/google.png"></a>
+            <a href="#"><img src="social/instagram.png"></a>
+        </div>
+       
+    <script>
+        let acc = document.getElementsByClassName("fold");
+
+        let i;
+
+        for (i = 0; i < acc.length; i++) {
+            acc[i].onclick = function () {
+                this.classList.toggle("active");
+                this.nextElementSibling.classList.toggle("show");
+            }
+        }
+
+    </script>
+
+
+    </div>
+
+   
+
+</body>
+</html>

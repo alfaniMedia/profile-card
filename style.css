@@ -1,0 +1,184 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    background: #1c2f3a;
+}
+
+.profile-card{
+    width: 430px;
+    height: 100%;
+    position: static;
+    margin: 30px auto;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: white;
+    color: #1c2f3a;
+    border-radius: 20px;
+    /*overflow: hidden;*/
+    box-shadow: 2px 2px 3px rgb(90, 90, 90);
+
+}
+
+.header{
+    background-image: url(showcase.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: rgb(85, 136, 165);
+    background-size: cover;
+    /*background-attachment: fixed;*/
+    width: 100%;
+    height: 150px;
+    position: relative;
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
+}
+
+.overlay{
+  /*background: linear-gradient(90deg, rgba(0, 0, 255, 0.336),
+                                     rgba(59, 59, 182, 0.85));*/
+}
+
+.header img {
+    position: absolute;
+    height: 50px;
+    right: 20px;
+    top: 10px;
+}
+
+.profile-pic {
+    position: absolute;
+    top: 95px;
+    left: 44%;
+    transition: transform 500ms ease-in-out;
+}
+
+@media(max-width:907px){
+    .profile-pic {
+        left: 50%;
+        transform: translateX(-50%);
+    }
+}
+
+.profile-pic:hover{
+    transform: translateX(0%) rotate(360deg);
+    box-shadow: 0px 0px;
+}
+
+.profile-pic img{
+    width: 160px;
+    border-radius: 50%;
+    border: 4px solid #fff;
+    box-shadow: 1px 3px 3px rgb(56, 56, 56);
+}
+
+.content{
+    padding: 65px 50px 0px 50px;
+    text-align: center;
+}
+
+.content h2{
+    font-size: 24px;
+    text-transform: uppercase;
+}
+
+.content h3{
+    margin-top: -20px;
+    font-weight: lighter;
+    font-size: 15px;
+    font-style: italic;
+    border-bottom: 1px solid rgba(0, 0, 255, 0.1);
+    padding-bottom: 15px;
+}
+
+
+.info-section{
+    
+}
+
+button{
+    border: none;
+    outline: none;
+    background-color: #fff;
+    padding: 15px 20px 25px 20px;
+}
+
+button.fold{
+    background-clip: #eee;
+    text-align: left;
+    cursor: pointer;
+    font-size: 15px;
+    color: #2e3192;
+    width: 100%;
+    border: none;
+    height: 25px;
+
+}
+
+button.fold.active, button.fold:hover{
+    background-color: #1c2f3a;
+    color: #fff;
+}
+
+
+/* Plus Button */
+button.fold:after{
+    content: '\02795';
+    font-size: 12px;
+    float: right;
+}
+
+/* Minus Button */
+button.fold.active:after{
+    content: '\12796';
+    font-size: 12px;
+}
+
+div.reveal{
+    padding: 0 25px;
+    max-height: 0;
+    overflow: hidden;
+    transition: 0.6s ease-in-out;
+    opacity: 0;
+}
+
+div.reveal.show{
+    opacity: 1;
+    max-height: 500px;
+}
+
+.reveal p{
+    text-align: justify;
+    font-weight: 600;
+    border-bottom: 1px solid rgba(0, 0, 255, 0.1);
+    color: rgb(121, 120, 120);
+}
+
+.reveal p span{
+    font-weight: normal;
+}
+
+
+/* Contact */
+.social{
+    border-top: 1px solid rgba(0, 0, 255, 0.1);
+    padding-top: 5px;
+    text-align: center;
+    width: ; 
+    margin: 10px auto 10px auto;
+}
+
+.social img{
+    width: 40px;
+}
+
+@media(max-width: 300px){
+    .profile-card{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 350%;
+    }
+}
